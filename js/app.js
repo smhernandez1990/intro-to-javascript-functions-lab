@@ -248,4 +248,5 @@ function createUsername(firstName, lastName){
     return (firstName.slice(0, 3)) + (lastName.slice(0, 3)) + ((firstName + lastName).length)
 }
 
-console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+console.log('Exercise 11 Result:', createUsername("Samantha", "Hernandez"), 'hey its me!');
+
