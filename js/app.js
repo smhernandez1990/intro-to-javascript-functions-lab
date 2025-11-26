@@ -31,13 +31,12 @@ Complete the exercise in the space below:
 
 
 function isAdult(age) {
-    if(age >= 18){
+    if (age >= 18) {
         return "Adult";
-    }
-    else if(age < 18){
+    }else{
         return "Minor";
     }
-    
+
 }
 
 console.log("Exercise 2 Result:", isAdult(21));
@@ -55,10 +54,14 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
-function isCharAVowel(char){
-    if(char === "a", "e", "i", "o", "u"){ return "true"
+let char = []
+let vowels = ["a", "e", "i", "o", "u"]
+
+function isCharAVowel(char) {
+    if (vowels.includes(char)) {
+        return true
     }else{
-        return "false"
+        return false
     }
 }
 
@@ -95,7 +98,7 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-function greetUser(name, time){
+function greetUser(name, time) {
     return `Good ${time} ${name}!`
 }
 
@@ -113,12 +116,12 @@ Example: maxOfThree(17, 4, 9) should return 17.
 Complete the exercise in the space below:
 */
 
-function maxOfThree(numA, numB, numC){
-    if(numA > numB && numA > numC){
+function maxOfThree(numA, numB, numC) {
+    if (numA > numB && numA > numC) {
         return (numA)
-    }else if(numB > numA && numB > numC){
+    } else if (numB > numA && numB > numC) {
         return (numB)
-    }else{
+    } else {
         return (numC)
     }
 }
@@ -137,8 +140,8 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 
-function calculateTip(bill, percentage){
-    return (bill) * ((percentage/100))
+function calculateTip(bill, percentage) {
+    return (bill) * ((percentage / 100))
 }
 
 console.log('Exercise 7 Result:', calculateTip(50, 20));
@@ -157,11 +160,11 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-function convertTemperature(temp, scale){
-    if(scale === "F"){
-        return ((temp) * 9/5) + 32 + (scale)
-    }else if(scale === "C"){
-        return ((temp) - 32) * 5/9 + (scale)
+function convertTemperature(temp, scale) {
+    if (scale === "C") {
+        return ((temp) * 9/5) + 32
+    } else if (scale === "F") {
+        return ((temp) - 32) * 5/9
     }
 }
 
@@ -183,14 +186,14 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
-function basicCalculator(numA, numB, operator){
-    if(operator === "add"){
+function basicCalculator(numA, numB, operator) {
+    if (operator === "add") {
         return (numA) + (numB)
-    }else if(operator === "subtract"){
+    } else if (operator === "subtract") {
         return (numA) - (numB)
-    }else if(operator === "multiply"){
+    } else if (operator === "multiply") {
         return (numA) * (numB)
-    }else if(operator === "divide"){
+    } else if (operator === "divide") {
         return (numA) / (numB)
     }
 }
@@ -212,16 +215,16 @@ Example: calculateGrade(100) should return A.
 Complete the exercise in the space below:
 */
 
-function calculateGrade(score){
-    if(score >= 90){
+function calculateGrade(score) {
+    if (score >= 90) {
         return "A"
-    }else if(score >= 80 && score < 90){
+    } else if (score >= 80 && score < 90) {
         return "B"
-    }else if(score >= 70 && score < 80){
+    } else if (score >= 70 && score < 80) {
         return "C"
-    }else if(score >= 60 && score < 70){
+    } else if (score >= 60 && score < 70) {
         return "D"
-    }else if(score < 60){
+    } else if (score < 60) {
         return "F"
     }
 }
@@ -244,7 +247,7 @@ Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
 Complete the exercise in the space below:
 */
 
-function createUsername(firstName, lastName){
+function createUsername(firstName, lastName) {
     return (firstName.slice(0, 3)) + (lastName.slice(0, 3)) + ((firstName + lastName).length)
 }
 
@@ -259,7 +262,7 @@ This function should return the count of arguments passed to it when called.
 Complete the exercise in the space below:
 */
 
-function numArgs(){
+function numArgs() {
     return arguments.length;
 }
 
